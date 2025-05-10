@@ -96,3 +96,11 @@ h1 {
   border-radius: 6px;
   border: 1px solid var(--border);
 }
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.875rem;
+  margin-top: 40px;
+}
