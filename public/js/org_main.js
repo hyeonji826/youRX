@@ -27,7 +27,7 @@ function simulateScan() {
   localStorage.setItem("scannedPatients", JSON.stringify(list));
 
   // 결과 페이지로 이동
-  window.location.href = "./result/result.html";
+  window.location.href = "./result.html";
 }
 
 // 환자 리스트 렌더링 (검색어 필터 포함)
@@ -43,7 +43,7 @@ function renderRecentList(filter = "") {
     if (!filter || keyword.includes(filter.toLowerCase())) {
       const li = document.createElement("li");
       li.textContent = `${nameMasked} ${p.phoneSuffix}`;
-      li.onclick = () => (window.location.href = "./result/result.html");
+      li.onclick = () => (window.location.href = "./result.html");
       container.appendChild(li);
     }
   });
@@ -63,7 +63,7 @@ document.getElementById("searchInput").addEventListener("keydown", (e) => {
       (p.name + p.phoneSuffix).toLowerCase().includes(filter)
     );
     if (match) {
-      window.location.href = "./result/result.html";
+      window.location.href = "./result.html";
     }
   }
 });
