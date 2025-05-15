@@ -1,0 +1,99 @@
+/* 전체 페이지 초기화 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+}
+
+/* 가운데 정렬과 적절한 여백 */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh 2vw;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 상단 음성 안내 */
+.audio-guide {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0044cc;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+.audio-guide img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 앱 로고 타이틀 */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* 접근성 버튼 공통 스타일 */
+.access-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #dbe3ea;
+  border: none;
+  color: #111;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.access-btn:hover {
+  background-color: #c5d8e4;
+}
+
+.access-btn img {
+  width: 36px;
+  height: 36px;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-container button {
+  background-color: #dbe3ea;
+  border: none;
+  color: #111;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 2rem 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 300px;
+  text-align: center;
+  line-height: 1.5;
+  transition: background 0.2s ease;
+}
+
+.btn-container button:hover {
+  background-color: #c5d8e4;
+}
