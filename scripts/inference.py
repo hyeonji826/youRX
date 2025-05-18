@@ -1,1 +1,0 @@
-# predict_pill(),ocr_and_parse() 함수 모아둔 엔트리리

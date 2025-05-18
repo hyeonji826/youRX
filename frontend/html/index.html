@@ -1,34 +1,92 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>youRX 접근성 선택</title>
-  <link rel="stylesheet" href="/수정/css/style.css" />
-</head>
-<body>
-  <div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youRX - 복약부터 병원 예약까지</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/frontend/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo">youRX</a>
+        <nav class="nav">
+          <ul>
+            <!-- <li><a href="#feature">기능</a></li>
+            <li><a href="#accessibility">오디오 가이드</a></li> -->
+            <form action="" method="post" class="btn btn-login">로그인</form>
+            <form
+              action=""
+              method="post"
+              class="btn btn-signup"
+              style="color: #0066cc"
+            >
+              회원가입
+            </form>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- 상단 음성 안내 -->
-    <div class="audio-guide">
-      <img src="" alt="스피커" />
-      <span>음성안내 중...</span>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>복약부터 병원 예약까지,<br />당신의 처방전을 완성합니다</h1>
+          <p>youRX가 쉽고 빠르게 도와드립니다.</p>
+          <a href="#get-started" class="btn btn-start">시작하기</a>
+        </div>
+        <div class="access-modes">
+          <div class="hero-card">
+            <img src="/frontend/images/voice_icon.png" alt="" />
+            <h3>오디오 안내</h3>
+            <p><strong>음성 안내로 편리하게</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="feature" class="features">
+      <div class="container features-container">
+        <div class="feature-card">
+          <img src="/frontend/images/medical_smartphone_icon.png" alt="" />
+          <h4>약물 분석 도우미</h4>
+          <p>이미지로 알약을 식별하고 정보 제공</p>
+        </div>
+        <div class="feature-card">
+          <img src="/frontend/images/scanner_icon.png" alt="" />
+          <h4>성분·상호작용 조회</h4>
+          <p>복용 중인 약물 정보 및 병용금기 확인</p>
+        </div>
+        <div class="feature-card feature-card-hospital">
+          <img src="/frontend/images/hospital_icon.png" alt="" />
+          <h4>병원 찾기 & 진료예약</h4>
+          <p>간편하게 병원 검색 및 예약</p>
+        </div>
+        <div class="feature-card">
+          <img src="/frontend/images/medicine_icon.png" alt="" />
+          <h4>복약 알림</h4>
+          <p>정시 복약을 도와주는 알림 기능</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- 로고 -->
-    <h1>youRX</h1>
-
-    <!-- 접근성 버튼 -->
-    <button class="access-btn">
-      <img src="" alt="" />
-      청각 장애인
-    </button>
-
-    <button class="access-btn">
-      <img src="" alt="" />
-      시각 장애인
-    </button>
-
-  </div>
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-container">
+        <p>&copy; 2025 youRX. All rights reserved.</p>
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">문의: support@youRX.com</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

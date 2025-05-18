@@ -1,99 +1,190 @@
-/* 전체 페이지 초기화 */
-body {
+:root {
+  --primary: #0066cc;
+  --secondary: #00cc99;
+  --accent: #167429;
+  --bg: #f5f8fc;
+}
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-}
-
-/* 가운데 정렬과 적절한 여백 */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4vh 2vw;
-  max-width: 500px;
-  margin: 0 auto;
-  height: 100vh;
   box-sizing: border-box;
 }
-
-/* 상단 음성 안내 */
-.audio-guide {
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* header 영역*/
+header {
+  background-color: #fff;
+  padding: 1rem 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 1rem auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+.nav li {
+  text-align: center;
+  margin-top: 0.8rem;
+  color: #666;
+}
+nav .btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.btn-login {
+  background-color: var(--primary);
+  color: #fff;
+}
+.btn-login:hover {
+  background-color: #005bbb;
+}
+/* Hero 영역역 */
+.btn-start {
+  background-color: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 0.6rem;
+  padding: 0.1rem 2.5rem;
+}
+.btn-start:hover {
+  background-color: #e6a500;
+}
+.hero {
+  background-color: #e1ecf9;
+  padding: 4rem 0;
+}
+.hero-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: #0044cc;
+  justify-content: space-between;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
   font-size: 1rem;
-  font-weight: 600;
-  align-self: flex-start;
   margin-bottom: 2rem;
 }
-
-.audio-guide img {
-  width: 20px;
-  height: 20px;
+.access-modes {
+  display: flex;
+  gap: 5rem;
+  padding-right: 5rem;
+  max-width: max-content;
 }
-
-/* 앱 로고 타이틀 */
-h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 2.5rem;
+.hero-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
   text-align: center;
+  width: 20rem;
+  height: 14rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-/* 접근성 버튼 공통 스타일 */
-.access-btn {
+.hero-card h3 {
+  font-size: 1.7rem;
+  /* font-weight: bold; */
+}
+.hero-card p {
+  margin-top: 1rem;
+  color: #0066cc;
+  font-style: italic;
+}
+.card i {
+  display: block;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+/* feature 영역 */
+.features {
+  padding: 5rem 0;
+}
+.features-container {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #dbe3ea;
-  border: none;
-  color: #111;
-  font-weight: bold;
-  font-size: 1.3rem;
-  padding: 1.2rem 1.5rem;
-  border-radius: 12px;
-  margin: 1rem 0;
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
-  justify-content: center;
-  transition: background 0.2s ease;
+  flex-direction: row;
 }
-
-.access-btn:hover {
-  background-color: #c5d8e4;
-}
-
-.access-btn img {
-  width: 36px;
-  height: 36px;
-}
-.btn-container {
-  display: flex;
+.feature-card {
+  display: block;
   flex-direction: column;
+  border: 2px solid #c1c4c7;
+  border-radius: 2rem;
+  /* height: 10rem; */
+  text-align: center;
+  padding: 1.9rem;
+  padding-bottom: 3rem;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+.feature-card i {
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.feature-card img {
+  width: fit-content;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.6rem;
+  margin: 1rem auto;
+}
+.feature-card p {
+  margin-top: 0.2rem;
+}
+/* footer 영역 */
+footer {
+  background-color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container p {
+  margin-bottom: 1rem;
+}
+
+.footer-container ul {
+  list-style: none;
+  display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
-.btn-container button {
-  background-color: #dbe3ea;
-  border: none;
-  color: #111;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 2rem 1.8rem;
-  border-radius: 10px;
-  cursor: pointer;
-  min-width: 300px;
-  text-align: center;
-  line-height: 1.5;
-  transition: background 0.2s ease;
-}
-
-.btn-container button:hover {
-  background-color: #c5d8e4;
+footer a {
+  color: #666;
+  text-decoration: none;
 }

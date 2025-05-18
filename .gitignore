@@ -1,1 +1,10 @@
 memo.txt
+
+# 가상환경
+/venv
+
+# 학습/샘플 이미지
+/data/
+
+# env
+.env
