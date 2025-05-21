@@ -1,0 +1,60 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youRX - 병원 찾기 & 진료예약</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/common.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">youRX</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="drug.html" class="nav-item nav-drug">약물 분석</a></li>
+            <li><a href="interaction.html" class="nav-item nav-interaction">성분 조회</a></li>
+            <li><a href="hospital.html" class="nav-item nav-hospital">병원 예약</a></li>
+            <li><a href="reminder.html" class="nav-item nav-reminder">복약 알림</a></li>
+          </ul>
+          <form action="#" method="post" class="btn btn-login">로그인</form>
+          <form action="#" method="post" class="btn btn-signup">회원가입</form>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Feature Detail: 병원 찾기 & 진료예약 -->
+    <section class="hospital-section">
+      <div class="container hospital-container">
+        <h2 class="hospital-title">병원 찾기 & 진료예약</h2>
+        <p class="hospital-description">
+          지역 및 과를 선택해 가까운 병원을 검색하고 바로 예약할 수 있습니다.
+        </p>
+        <form class="hospital-form search-form">
+          <input type="text" placeholder="지역(예: 서울 강남구)" class="hospital-input region-input" />
+          <input type="text" placeholder="진료 과목 입력" class="hospital-input department-input" />
+          <button type="submit" class="btn btn-hospital-submit">검색하기</button>
+        </form>
+        <ul class="hospital-result-list" id="hospital-result">
+          <!-- 검색 결과 리스트 -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; 2025 youRX. All rights reserved.</p>
+        <ul class="footer-list">
+          <li><a href="#" class="footer-item">이용약관</a></li>
+          <li><a href="#" class="footer-item">개인정보처리방침</a></li>
+          <li><a href="#" class="footer-item">문의: support@youRX.com</a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>

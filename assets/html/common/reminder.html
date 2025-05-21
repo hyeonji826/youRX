@@ -1,0 +1,62 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youRX - 복약 알림</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/common.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">youRX</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="drug.html" class="nav-item nav-drug">약물 분석</a></li>
+            <li><a href="interaction.html" class="nav-item nav-interaction">성분 조회</a></li>
+            <li><a href="hospital.html" class="nav-item nav-hospital">병원 예약</a></li>
+            <li><a href="reminder.html" class="nav-item nav-reminder">복약 알림</a></li>
+          </ul>
+          <form action="#" method="post" class="btn btn-login">로그인</form>
+          <form action="#" method="post" class="btn btn-signup">회원가입</form>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Feature Detail: 복약 알림 -->
+    <section class="reminder-section">
+      <div class="container reminder-container">
+        <h2 class="reminder-title">복약 알림 설정</h2>
+        <p class="reminder-description">
+          복약 시간을 설정하고 알림을 받아보세요.
+        </p>
+        <form class="reminder-form">
+          <label for="medicine-name" class="reminder-label">약품명</label>
+          <input type="text" id="medicine-name" class="reminder-input name-input" placeholder="약품명을 입력하세요" />
+          <label for="time" class="reminder-label">시간</label>
+          <input type="time" id="time" class="reminder-input time-input" />
+          <button type="submit" class="btn btn-reminder-submit">알림 설정</button>
+        </form>
+        <ul class="reminder-list" id="reminder-list">
+          <!-- 설정된 알림 목록 -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; 2025 youRX. All rights reserved.</p>
+        <ul class="footer-list">
+          <li><a href="#" class="footer-item">이용약관</a></li>
+          <li><a href="#" class="footer-item">개인정보처리방침</a></li>
+          <li><a href="#" class="footer-item">문의: support@youRX.com</a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
